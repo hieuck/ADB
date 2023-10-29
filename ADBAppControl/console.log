@@ -1,0 +1,62 @@
+﻿### 10/29/2023 8:39:22 AM
+### Intel(R) Xeon(R) CPU E5-2696 v3 @ 2.30GHz / RAM 128GB
+### Windows 10 Pro for Workstations x64 / .NET Framework 4.8.09032
+### AppControl 1.8.3
+
+connect 192.168.0.1:5555
+cannot connect to 192.168.0.1:5555: No connection could be made because the target machine actively refused it. (10061)
+
+### SESSION STOPPED by user in 8:40:39 ###
+
+
+### 10/29/2023 9:49:52 AM
+### Intel(R) Xeon(R) CPU E5-2696 v3 @ 2.30GHz / RAM 128GB
+### Windows 10 Pro for Workstations x64 / .NET Framework 4.8.09032
+### AppControl 1.8.3
+
+[USB] Device connected: Samsung SM-G960F (Android 10.0)
+
+[Success]: ACBridge (com.cybercat.acbridge) installed.
+
+[Success]:Applications data updated.
+
+tcpip 5555
+restarting in TCP mode port: 5555
+
+[Event]:USB:PLUG_OUT
+
+[Event]:USB:PLUG_OUT
+
+[Event]:USB:PLUG_OUT
+
+connect 192.168.0.191:5555
+connected to 192.168.0.191:5555
+
+[WIFI] Device connected: Samsung SM-G960F (Android 10.0)
+
+[Success]:Applications data updated.
+
+shell pm path com.samsung.android.authfw
+package:/data/app/com.samsung.android.authfw-ZefluY82m5SHq974kLKtYw==/base.apk
+
+shell cp -r "/data/app/com.samsung.android.authfw-ZefluY82m5SHq974kLKtYw==/base.apk" "/storage/emulated/0"
+
+pull "/storage/emulated/0/base.apk" "G:\Program Files\ADBAppControl\downloads\samsung SM-G960F\Authentication Framework (com.samsung.android.authfw) [v.4.0.06.4].apk"
+/storage/emulated/0/base.apk: 1 file pulled, 0 skipped. 6.4 MB/s (32932245 bytes in 4.920s)
+
+shell rm -R "/storage/emulated/0/base.apk"
+
+shell pm uninstall --user 0 com.samsung.android.authfw
+Success
+
+disconnect
+disconnected everything
+
+### SESSION STOPPED by user in 9:54:55 ###
+
+
+### 10/29/2023 9:56:01 AM
+### Intel(R) Xeon(R) CPU E5-2696 v3 @ 2.30GHz / RAM 128GB
+### Windows 10 Pro for Workstations x64 / .NET Framework 4.8.09032
+### AppControl 1.8.3
+
